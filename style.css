@@ -35,7 +35,9 @@ nav ul li a:hover{
     padding: 100px 20px;
     text-align: center;
     background: #ffd6d6;
-background: linear-gradient(90deg, rgba(255, 214, 214, 1) 0%, rgba(196, 196, 255, 1) 54%, rgba(93, 136, 245, 1) 100%);
+background: linear-gradient(90deg, rgba(255, 214, 214, 1) 0%,
+ rgba(196, 196, 255, 1) 54%, rgba(93, 136, 245, 1) 100%);
+}
 
 .small-title{
     font-size: 14px;
