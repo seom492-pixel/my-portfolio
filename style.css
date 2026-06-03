@@ -1,3 +1,16 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background-color: #f5f7fb;
+    color:#222;
+    line-height: 1.6;
+}
+
 nav {
     background-color: #ffff;
     border-bottom:1px solid #e5e7eb;
@@ -5,6 +18,11 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 nav ul {
@@ -37,6 +55,7 @@ nav ul li a:hover{
     background: #ffd6d6;
 background: linear-gradient(90deg, rgba(255, 214, 214, 1) 0%,
  rgba(196, 196, 255, 1) 54%, rgba(93, 136, 245, 1) 100%);
+ animation: fadeUp 2s ease;
 }
 
 .small-title{
@@ -83,11 +102,7 @@ background: linear-gradient(90deg, rgba(255, 214, 214, 1) 0%,
     color: #1e2a78;
 }
 
-body{
-    background-color: #f5f7fb;
-    color:#222;
-    line-height: 1.6;
-}
+
 
 section{
     background-color: white;
@@ -126,10 +141,16 @@ footer{
 }
 
 .card{
-    width: 230px;
+    width: 270px;
     border: 1px solid #ececec;
     border-radius: 18px;
     padding: 20px;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.card:hover {
+    transform: translate(0, -8px);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 .card h3{
@@ -196,4 +217,25 @@ footer{
     color: white;
     width: 200px;
     font-size: 16px;
+    border: none;
+    padding: 14px 24px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact-from input[type="submit"]:hover {
+    background-color: #7c3aed;
+    transform: translate(0,-4px);
+}
+
+@keyframes fadeUp {
+    from{
+        opacity: 0;
+        transform: translate(0, 25px);
+
+    }
+    to{
+        opacity: 1;
+        transform: translate(0, 0);
+
+    }
 }
