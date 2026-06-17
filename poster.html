@@ -1,20 +1,276 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>포스터 디자인 상세 페이지</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>캐릭터 키캡 상세페이지</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+
+<style>
+
+/* 여기에 CSS 전부 */
+
+</style>
+
 </head>
+
 <body>
-    <nav>
-    <div class="logo">MINSEO_PORTFOLIO</div>
-    <ul>
-        <li><a href="index.html#About">About</a></li>
-        <li><a href="index.html#Services">Services</a></li>
-        <li><a href="index.html#portfolio">portfolio</a></li>
-        <li><a href="index.html#contact">contact</a></li>
+
+<nav>
+    <div class="logo">MY KEYCAP KEYRING SHOP</div>
+
+    <ul class="menu">
+        <li><a href="index.html#about">소개</a></li>
+        <li><a href="index.html#service">종류</a></li>
+        <li><a href="index.html#portfolio">상품</a></li>
+        <li><a href="index.html#contact">문의하기</a></li>
     </ul>
-    </nav>
+</nav>
+
+<div class="container">
+
+    <!-- 상품 영역 -->
+
+</div>
+
+</body>
+</html>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Pretendard',sans-serif;
+}
+
+body{
+    background:#f7f4f2;
+    color:#5a5861;
+}
+
+/* 네비게이션 */
+
+nav{
+    background:white;
+    padding:20px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:1px solid #e7e1ea;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:700;
+}
+
+.menu{
+    display:flex;
+    gap:30px;
+    list-style:none;
+}
+
+.menu a{
+    text-decoration:none;
+    color:#5a5861;
+    font-weight:600;
+}
+
+/* 컨테이너 */
+
+.container{
+    max-width:1200px;
+    margin:60px auto;
+    padding:20px;
+}
+
+/* 상품영역 */
+
+.product{
+    background:white;
+    border-radius:30px;
+    padding:50px;
+    display:flex;
+    align-items:center;
+    gap:50px;
+    box-shadow:0 4px 20px rgba(0,0,0,0.05);
+}
+
+.product-image{
+    flex:1;
+}
+
+.product-image img{
+    width:100%;
+    border-radius:20px;
+    display:block;
+}
+
+.product-info{
+    flex:1;
+}
+
+.category{
+    color:#b89aa8;
+    font-size:14px;
+    margin-bottom:15px;
+}
+
+.product-info h1{
+    font-size:52px;
+    margin-bottom:20px;
+}
+
+.description{
+    color:#8d8790;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.price{
+    font-size:42px;
+    font-weight:700;
+    margin-bottom:30px;
+}
+
+.buttons{
+    display:flex;
+    gap:15px;
+}
+
+.btn{
+    padding:15px 35px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.buy{
+    background:#cdb9c6;
+    color:white;
+}
+
+.cart{
+    border:2px solid #cdb9c6;
+    color:#5a5861;
+}
+
+/* 상세설명 */
+
+.detail{
+    margin-top:40px;
+    background:white;
+    padding:50px;
+    border-radius:30px;
+    box-shadow:0 4px 20px rgba(0,0,0,0.05);
+}
+
+.detail h2{
+    margin-bottom:25px;
+}
+
+.detail ul{
+    line-height:2;
+    color:#8d8790;
+}
+
+.detail img{
+    width:100%;
+    border-radius:20px;
+    margin-top:30px;
+}
+
+/* 모바일 */
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .menu{
+        gap:15px;
+    }
+
+    .product{
+        flex-direction:column;
+        padding:30px;
+    }
+
+    .product-info h1{
+        font-size:36px;
+    }
+
+    .price{
+        font-size:32px;
+    }
+
+    .buttons{
+        flex-direction:column;
+    }
+
+    .btn{
+        text-align:center;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="product">
+
+        <div class="product-image">
+            <img src="https://hm7r1ygyeec8kqkc.public.blob.vercel-storage.com/thumbnails/signal-2026-06-17-165932.jpeg">
+        </div>
+
+        <div class="product-info">
+
+            <p class="category">CHARACTER KEYCAP</p>
+
+            <h1>헬로키티 키캡 키링</h1>
+
+            <p class="description">
+                귀여운 헬로키티 디자인의 키캡 키링입니다.<br>
+                가방, 파우치, 자동차 키 등에 달아 나만의 감성을 표현해보세요.
+            </p>
+
+            <div class="price">₩8,900</div>
+
+            <div class="buttons">
+                <a href="#" class="btn buy">구매하기</a>
+                <a href="#" class="btn cart">장바구니</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="detail">
+
+        <h2>상품 상세정보</h2>
+
+        <ul>
+            <li>귀여운 헬로키티 디자인</li>
+            <li>실제 키보드 키캡 사용</li>
+            <li>가벼운 무게</li>
+            <li>가방 · 파우치 포인트 아이템</li>
+            <li>선물용 추천</li>
+        </ul>
+
+        <img src="https://hm7r1ygyeec8kqkc.public.blob.vercel-storage.com/thumbnails/signal-2026-06-17-165932.jpeg">
+
+    </div>
+
+</div>
+
 </body>
 </html>
